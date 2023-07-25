@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url = 'mongodb+srv://harshalsgore:YLWXQoTvv7T5RphA@cluster0.uucjlco.mongodb.net/?retryWrites=true&w=majority';
+const url = 'mongodb+srv://harshalsgore:YLWXQoTvv7T5RphA@cluster0.uucjlco.mongodb.net/Issue-Tracker?retryWrites=true&w=majority';
 mongoose.connect(url);
 const db=mongoose.connection;
 
@@ -10,4 +10,4 @@ db.once('open',()=>{
     console.log("Connected to Database :: MongoDB ")
 });
 
-module.exports=db;  
+module.exports=db; 
