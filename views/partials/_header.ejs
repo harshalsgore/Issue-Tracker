@@ -1,0 +1,7 @@
+<nav class="navbar navbar-expand-sm bg-dark">
+  <div class="container-fluid">
+    <a href="/" style="font-weight:bolder; text-decoration: none ; color: white; font-size: 30px; margin-left: 20px;"> Issue Tracker </a>
+    <% if( title === "Project Page"){ %> <%- include('_issue_form'); %> <%
+    }else{ %> <%- include('_project_form'); %> <% } %>
+  </div>
+</nav>
